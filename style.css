@@ -9,11 +9,16 @@
 
 .sub-nav,
 .article,
+.table,
+.requests,
 .section-container,
 .article-container,
 .section-container,
 .category-container,
-.search-results {
+.search-results,
+.my-activities-header,
+.requests-table-toolbar,
+#main-content {
     width: 100%;
 }
 
@@ -1120,7 +1125,7 @@ input[type="submit"][disabled] {
 
 .breadcrumbs li {
     color: lighten($text_color, 20%);
-    display: inline;
+    display: inline !important;
     font-size: 13px;
     max-width: 450px;
     overflow: hidden;
@@ -2045,7 +2050,7 @@ input[type="submit"][disabled] {
 
 .share li,
 .share a {
-    display: inline-block;
+    display: inline-block !important;
 }
 
 .share li {
@@ -3297,6 +3302,10 @@ input[type="submit"][disabled] {
 .my-activities-nav {
     background-color: darken($background_color, 5%);
     margin-bottom: 20px;
+}
+
+.my-activities-nav .ct-section-inner-wrap {
+    padding: 10px 20px;
 }
 
 .my-activities-sub-nav {

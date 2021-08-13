@@ -1,5 +1,4 @@
-<div class="my-activities-nav">
-  <div class="container">
+<section class="ct-section my-activities-nav"><div class="ct-section-inner-wrap">
     <nav class="collapsible-nav">
       <button type="button" class="collapsible-nav-toggle" aria-label="{{t 'toggle_navigation'}}" aria-expanded="false">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" focusable="false" viewBox="0 0 12 12" aria-hidden="true" class="collapsible-nav-toggle-icon chevron-icon">
@@ -15,10 +14,10 @@
         <li>{{link 'subscriptions'}}</li>
       </ul>
     </nav>
-  </div>
-</div>
+</div></section>
 
-<div class="container">
+<section class="ct-section"><div class="ct-section-inner-wrap">
+
   <div class="request-breadcrumbs">{{breadcrumbs}}</div>
 
   <h1 class="request-title">{{request.subject}}</h1>
@@ -43,9 +42,7 @@
 
                   <div class="comment-meta">
                     <span title="{{author.name}}">
-                      {{#link 'user_profile' id=author.id}}
                         {{author.name}}
-                      {{/link}}
                     </span>
 
                     <ul class="meta-group">
@@ -249,3 +246,4 @@
     </section>
   </div>
 </div>
+</section>
