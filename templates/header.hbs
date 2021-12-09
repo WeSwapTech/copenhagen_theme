@@ -45,7 +45,9 @@
 <script type="text/javascript">
   jQuery(document).ready(function () {
     let searchParams = new URLSearchParams(window.location.search)
-    if(searchParams.has('embed')) {
+    if(searchParams.has('embed') or document.cookie.split(';').some((item) => item.trim().startsWith('embed='))) {
+      //set cookie
+      document.cookie = "embed=1; SameSite=None; Secure";
       // remove header and footer when embedded on a phone
       jQuery('#main-menu-header').remove();
       jQuery('#section-31-12').remove();
