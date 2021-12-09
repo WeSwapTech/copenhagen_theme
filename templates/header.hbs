@@ -44,6 +44,12 @@
 </header>
 <script type="text/javascript">
   jQuery(document).ready(function () {
+    var is_embedded = urlParams.has('embed');
+    if(is_embedded) {
+      // remove header and footer when embedded on a phone
+      jQuery('#main-menu-header').remove();
+      jQuery('#section-31-12').remove();
+    }
     var selector = "#main-menu-header",
       scrollval = parseInt("300");
     if (!scrollval || scrollval < 1) {
